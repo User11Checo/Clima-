@@ -1,0 +1,12 @@
+{
+  "name": "clima",
+  "private": true,
+  "description": "App de clima de México orientada a servicios (React + Node.js + Open-Meteo)",
+  "scripts": {
+    "instalar": "npm install && npm install --prefix server && npm install --prefix client",
+    "dev": "concurrently -n api,web -c magenta,cyan \"npm run dev --prefix server\" \"npm run dev --prefix client\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
